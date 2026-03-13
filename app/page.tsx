@@ -42,7 +42,7 @@ export default function Home() {
 
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-up">
-            Con<span className="text-purple-400">V</span>ert with <span className="text-purple-400">LawVert</span>
+            Con<span className="text-white">V</span>ert with <span className="text-purple-400">LawVert</span>
           </h1>
           <h2 className="text-3xl md:text-5xl font-light text-white mb-8 animate-fade-up-delay-1">
             Go <span className="text-shimmer">Vertical</span>
