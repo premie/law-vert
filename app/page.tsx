@@ -34,7 +34,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-            Convert with <span className="text-purple-400">LawVert</span>
+            Con<span className="text-purple-400">V</span>ert with <span className="text-purple-400">LawVert</span>
           </h1>
           <h2 className="text-3xl md:text-5xl font-light text-white mb-8">
             Go <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Vertical</span>
