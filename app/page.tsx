@@ -1,8 +1,36 @@
 import Link from "next/link";
 
+const webPageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "LawVert - Convert with LawVert, Go Vertical",
+  url: "https://lawvert.com",
+  description:
+    "Transform your legal practice with cutting-edge conversion optimization. Elevate your firm's digital presence and watch your client base soar.",
+  isPartOf: {
+    "@type": "WebSite",
+    name: "LawVert",
+    url: "https://lawvert.com",
+  },
+  about: {
+    "@type": "Service",
+    name: "Legal Practice Conversion Optimization",
+    description:
+      "LawVert offers conversion optimization, lead generation, and performance tracking services designed specifically for law firms seeking to grow their digital client base.",
+    provider: {
+      "@type": "Organization",
+      name: "LawVert",
+    },
+  },
+};
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 overflow-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
+      />
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-black/20 backdrop-blur-lg z-50">
         <div className="max-w-7xl mx-auto px-6 py-4">

@@ -47,6 +47,37 @@ export default function RootLayout({
             gtag('config', 'G-W6368ZZDN7');
           `}
         </Script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "LawVert",
+              url: "https://lawvert.com",
+              description:
+                "LawVert provides cutting-edge conversion optimization and digital marketing solutions for law firms, helping legal practices maximize lead generation and client acquisition.",
+              sameAs: [],
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "LawVert",
+              url: "https://lawvert.com",
+              description:
+                "Transform your legal practice with cutting-edge conversion optimization. Elevate your firm's digital presence and watch your client base soar.",
+              publisher: {
+                "@type": "Organization",
+                name: "LawVert",
+              },
+            }),
+          }}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
